@@ -1,5 +1,10 @@
 #!/usr/bin/env node
-
 const repl = require('../repl')
 
-repl();
+const argv = require('yargs')
+  .command('repl', '打开一个交互终端', (yargs) => {}, function (argv) {
+    repl();
+  })
+  .locale('zh_CN')
+  .help()
+  .argv
