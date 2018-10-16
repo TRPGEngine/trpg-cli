@@ -2,7 +2,7 @@
   "name": "trpg-cli",
   "version": "1.0.0",
   "description": "a command cli for build trpg server",
-  "main": "cli.js",
+  "main": "./bin/cli",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,7 +21,7 @@
     "url": "https://github.com/TRPGEngine/trpg-cli/issues"
   },
   "bin": {
-    "trpg": "./cli.js"
+    "trpg": "./bin/cli"
   },
   "homepage": "https://github.com/TRPGEngine/trpg-cli#readme",
   "devDependencies": {},

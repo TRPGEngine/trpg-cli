@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const repl = require('repl');
 const chalk = require('chalk');
 const axios = require('axios');
@@ -28,17 +30,17 @@ function start() {
   })
 }
 
-module.exports = async function(host, port) {
-  // cfonts.say('TRPG Engine', {
-  //   font: 'block',
-  //   align: 'center',
-  //   colors: ['system'],
-  //   background: 'transparent',
-  //   letterSpacing: 1,
-  //   lineHeight: 1,
-  //   space: true,
-  //   maxLength: '0',
-  // })
+module.exports = async function(host = '127.0.0.1', port = '23256') {
+  cfonts.say('TRPG Engine', {
+    font: 'block',
+    align: 'center',
+    colors: ['system'],
+    background: 'transparent',
+    letterSpacing: 1,
+    lineHeight: 1,
+    space: true,
+    maxLength: '0',
+  })
 
   let ret = await checkLink(`http://${host}:${port}`);
   if(!ret) {
