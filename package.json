@@ -1,0 +1,33 @@
+{
+  "name": "trpg-cli",
+  "version": "1.0.0",
+  "description": "a command cli for build trpg server",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRPGEngine/trpg-cli.git"
+  },
+  "keywords": [
+    "trpg",
+    "cli",
+    "command"
+  ],
+  "author": "moonrailgun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TRPGEngine/trpg-cli/issues"
+  },
+  "bin": {
+    "trpg": "./cli.js"
+  },
+  "homepage": "https://github.com/TRPGEngine/trpg-cli#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cfonts": "^2.2.2",
+    "chalk": "^2.4.1"
+  }
+}
