@@ -19,7 +19,7 @@ async function checkLink(address) {
 
 function start() {
   let r = repl.start({
-    prompt: 'trpg > ',
+    prompt: 'trpg> ',
     useGlobal: false,
     eval: function(cmd, context, filename, callback) {
       command.run(cmd, {}, callback);
